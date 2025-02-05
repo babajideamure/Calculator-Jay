@@ -71,4 +71,5 @@ button:active {
 .head,
 .head i{
   color: yellow;
+  font-size: 1.2rem;
 }
