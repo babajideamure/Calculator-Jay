@@ -13,55 +13,37 @@
 </head>
 <body>
 
-    <div class="head">
-        <h1>Basic Calculator <i class="fa-solid fa-calculator"></i></h1>
-    </div>
-
     <div class="container">
 
-    <div class="user-display">
-        <input readonly>
-    </div>
-
-<div class="maths-btn">
-
-    <button>MC</button>
-    <button>MR</button>
-    <button>M&minus;</button>
-    <button>M&plus;</button>
-    <button>CE</button>
-    <button>&#8730;x</button>
-    <button>&#37;</button>
-    <button>&divide;</button>
-    <button>7</button>
-    <button>8</button>
-    <button>9</button>
-    <button>&times;</button>
-    <button>4</button>
-    <button>5</button>
-    <button>6</button>
-    <button>&minus;</button>
-    <button>1</button>
-    <button>2</button>
-    <button>3</button>
-    <button>&plus;</button>
-    <button>0</button>
-    <button>&#x2022;</button>
-    <button>&plusmn;</button>
-    <button>&equals;</button>
-    <button>&piv;</button>
-    <button>&#8339;&sup2;</button>
-    <button>R2</button>
-    <button>R0</button>
-
-</div>  
-
-<div class="footer">
-   <h6>powered by Jay. &reg;</h6> 
+    <div id="calculator"> 
+        <input id="display" readonly>
+<div class="keys">
+    <button onclick="clearDisplay()" class="clear">C</button>
+    <button onclick="appendToDisplay('( )')">( )</button>
+    <button onclick="appendToDisplay('%')">%</button>
+    <button onclick="appendToDisplay('/')">÷</button>
+    <button onclick="appendToDisplay('7')">7</button>
+    <button onclick="appendToDisplay('8')">8</button>
+    <button onclick="appendToDisplay('9')">9</button>
+    <button onclick="appendToDisplay('*')">*</button>
+    <button onclick="appendToDisplay('4')">4</button>
+    <button onclick="appendToDisplay('5')">5</button>
+    <button onclick="appendToDisplay('6')">6</button>
+    <button onclick="appendToDisplay('-')">-</button>
+    <button onclick="appendToDisplay('1')">1</button>
+    <button onclick="appendToDisplay('2')">2</button>
+    <button onclick="appendToDisplay('3')">3</button>
+    <button onclick="appendToDisplay('+')">+</button>
+    <button onclick="appendToDisplay('-')">+/-</button>
+    <button onclick="appendToDisplay('0')">0</button>
+    <button onclick="appendToDisplay('.')">.</button>
+    <button onclick="calculate()" class="equal">=</button>
 </div>
+    </div> 
 
+<div class="footer"> <h6>powered by Jay.</h6> </div>
 </div>
-
+<script src="./index.js"></script>
 </body>
 </html>
 
